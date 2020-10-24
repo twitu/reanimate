@@ -77,7 +77,7 @@ pre {
   cursor: ew-resize;
 }
 .grid {
-  grid-template-columns: 1fr 10px 2fr;
+  grid-template-columns: 3fr 10px 4fr;
   display: grid;
 }
 .grid textarea {
@@ -89,13 +89,6 @@ pre {
   border: 0px solid #eee;
   height: auto;
 }
-.select2 {
-}
-.select2-selection--single {
-  border: 0 !important;
-  border-bottom: 1px solid #aaa !important;
-  border-radius: 0 !important;
-}
 .edit-box {
   display: flex;
   flex-flow: column;
@@ -106,6 +99,7 @@ pre {
 }
 .edit-box #editor {
   flex: 1 1 auto;
+  max-height: 100vh;
 }
 .edit-box .app {
   flex: 1 1 auto;
@@ -119,6 +113,30 @@ pre {
 }
 .media-buttons img:hover {
   cursor: pointer;
+}
+
+.snippet-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.snippet-container > div {
+  width: 16em;
+  height: 9em;
+  margin: 1em;
+  position: relative;
+}
+.snippet-container > div:hover {
+  cursor: pointer;
+}
+.snippet-container > div > span {
+  position: absolute;
+  display: block;
+  background-color: rgba(255,255,255,0.3);
+  padding: 0.2em;
+}
+.snippet-container > div > img {
+  border: 1px solid black;
 }
 
 .github-corner:hover .octo-arm {
